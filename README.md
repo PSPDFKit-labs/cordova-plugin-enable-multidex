@@ -1,6 +1,6 @@
 # Multidex for Cordova
 
-[![Build Status](https://travis-ci.org/adriano-di-giovanni/cordova-plugin-enable-multidex.svg?branch=master)](https://travis-ci.org/adriano-di-giovanni/cordova-plugin-enable-multidex)
+**This repo is forked from the [original](https://github.com/adriano-di-giovanni/cordova-plugin-enable-multidex) in order to roll in changes to accommodate Cordova 9.x and Android 8.x changes.  See [This PR](https://github.com/PSPDFKit-labs/cordova-plugin-enable-multidex/commit/b161e9473ba58b663ac5888acb3de1983c77ce40) for a list of changes.**
 
 Enable Multidex for Cordova Android apps with over 64K methods.
 
@@ -12,8 +12,10 @@ More information can be found at https://developer.android.com/studio/build/mult
 
 ## Installation
 
+As this is a fork of an original repo, it needs to be installed using the git+http method.
+
 ```bash
-cordova plugin add cordova-plugin-enable-multidex
+cordova plugin add git+https://github.com/PSPDFKit-labs/cordova-plugin-enable-multidex.git
 ```
 
 ## Supported platforms
