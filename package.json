@@ -7,19 +7,20 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/adriano-di-giovanni/cordova-plugin-enable-multidex.git"
+        "url": "git+https://github.com/PSPDFKit-labs/cordova-plugin-enable-multidex.git"
     },
     "keywords": ["ecosystem:cordova", "cordova-android", "multidex"],
     "author": "Adriano Di Giovanni <me@adrianodigiovanni.com> (http://adrianodigiovanni.com/)",
+    "contributors": ["David Goodwin <goodwid@gmail.com" ],
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/adriano-di-giovanni/cordova-plugin-enable-multidex/issues"
+        "url": "https://github.com/PSPDFKit-labs/cordova-plugin-enable-multidex/issues"
     },
     "lint-staged": {
         "*.js": ["eslint --fix", "git add"],
         "*.json": ["prettier --write", "git add"]
     },
-    "homepage": "https://github.com/adriano-di-giovanni/cordova-plugin-enable-multidex#readme",
+    "homepage": "https://github.com/PSPDFKit-labs/cordova-plugin-enable-multidex#readme",
     "devDependencies": {
         "eslint": "^4.17.0",
         "eslint-config-prettier": "^2.9.0",
