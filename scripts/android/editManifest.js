@@ -1,19 +1,19 @@
 module.exports = function(context) {
-    var fs = require('fs')
-    var path = require('path')
-    var Q = require('q')
-    var xml = require('cordova-common').xmlHelpers
+    const fs = require('fs')
+    const path = require('path')
+    const Q = require('q')
+    const xml = require('cordova-common').xmlHelpers
 
-    var deferred = Q.defer()
+    const deferred = Q.defer()
 
-    var platformRoot = path.join(context.opts.projectRoot, './platforms/android')
+    const platformRoot = path.join(context.opts.projectRoot, './platforms/android')
 
-    var filepaths = [
+    const filepaths = [
         path.join(platformRoot, './AndroidManifest.xml'),
         path.join(platformRoot, './app/src/main/AndroidManifest.xml'),
     ]
 
-    var filepath = filepaths.find(function(filepath) {
+    const filepath = filepaths.find(function(filepath) {
         try {
             fs.accessSync(filepath, fs.constants.F_OK)
             return true
@@ -22,7 +22,7 @@ module.exports = function(context) {
         }
     })
 
-    var doc
+    let doc
 
     if (filepath != null) {
         doc = xml.parseElementtreeSync(filepath)
